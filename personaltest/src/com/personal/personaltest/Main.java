@@ -92,16 +92,16 @@ public class Main extends HttpServlet {
      * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
      */
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        String name = request.getParameter("userName");
-    	String email = request.getParameter("email");
-    	String ip = request.getRemoteAddr();
+        //String name = request.getParameter("userName");
+    	//String email = request.getParameter("email");
+    	//String ip = request.getRemoteAddr();
     	
     	
-    	VideoRecommender vid1 = new VideoRecommender();
-    	vid1.ItemSimilarity_run();
+    	//VideoRecommender vid1 = new VideoRecommender();
+    	//vid1.ItemSimilarity_run();
     	
-    	PrintWriter out = response.getWriter();
-    	out.println(HTML_START + "<h2>Hi There!</h2><br/><h3>Name:"+ name +"</h3></br>" + "Email:" + email + "</br>" + "</br>" + HTML_END);   
+    	//PrintWriter out = response.getWriter();
+    	//out.println(HTML_START + "<h2>Hi There!</h2><br/><h3>Name:"+ name +"</h3></br>" + "Email:" + email + "</br>" + "</br>" + HTML_END);   
     	
         if (request.getRequestURI().endsWith("/db")) {
             showDatabase(request,response);
