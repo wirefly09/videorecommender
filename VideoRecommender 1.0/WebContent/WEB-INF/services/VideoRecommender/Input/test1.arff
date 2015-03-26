@@ -1,0 +1,38 @@
+
+
+@relation contact-lenses
+
+@attribute duration numeric 		
+@attribute GOG				{0, 1}
+@attribute MOM				{0, 1}
+@attribute Pen				{no, yes}
+@attribute Style			{soft, hard, none}
+
+@data
+%
+% 24 instances
+%
+10,1,0,no,none
+12,1,0,no,soft
+15,1,0,yes,none
+17,1,0,yes,hard
+5,1,0,no,none
+3,1,0,no,soft
+4,1,0,yes,none
+12,1,0,yes,hard
+3,1,0,no,none
+6,1,0,no,soft
+7,1,0,yes,none
+15,1,0,yes,hard
+16,1,0,no,none
+8,1,0,no,soft
+9,1,0,yes,none
+16,1,0,yes,none
+3,0,1,no,none
+4,0,1,no,none
+6,0,1,yes,none
+9,0,1,yes,hard
+8,0,1,no,none
+2,0,1,no,soft
+6,0,1,yes,none
+19,0,1,yes,none
